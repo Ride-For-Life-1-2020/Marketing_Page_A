@@ -192,7 +192,7 @@ nav .title-home a {
 nav .links-left {
   width: 55%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   font-size: 1.5rem;
 }
 nav .links-left a {
