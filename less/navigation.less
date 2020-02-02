@@ -6,7 +6,7 @@ nav {
     background-color: black;
 
     .title-home {
-        width: 25%;
+        width: 20%;
         .flex-center();
         font-size: 3rem;
         color: white;
@@ -16,16 +16,16 @@ nav {
         }
     }
     .links-left {
-        width: 35%;
+        width: 55%;
         display: flex;
-        justify-content: space-between;
+        align-items: flex-end;
         font-size: 1.5rem;
 
         a {
             text-decoration: none;
             color: white;
             display: flex;
-            align-items: flex-end;
+            padding: 0 2%;
         }
         :hover {
             color: #00e676;
@@ -37,12 +37,17 @@ nav {
         font-size: 1.5rem;
         text-decoration: none;
         color: white;
+        display: flex;
+        justify-content: space-evenly;
+
         a {
             text-decoration: none;
             color: white;
             display: flex;
+            justify-content: space-between;
             align-items: flex-end;
         }
+
         :hover {
             color: #00e676;
         }
