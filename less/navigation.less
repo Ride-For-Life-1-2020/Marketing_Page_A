@@ -26,9 +26,9 @@ nav {
             color: white;
             display: flex;
             padding: 0 2%;
-        }
-        :hover {
-            color: #00e676;
+            &:hover {
+                color: #00e676;
+            }
         }
     }
     .links-right {
@@ -39,17 +39,27 @@ nav {
         color: white;
         display: flex;
         justify-content: space-evenly;
+        padding: 0 1%;
 
         a {
             text-decoration: none;
             color: white;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
 
-        :hover {
-            color: #00e676;
+            align-items: center;
+            &:hover {
+                color: #00e676;
+            }
+        }
+        :last-child {
+            background-color: white;
+            color: black;
+            border-radius: 5%;
+            padding: 0 3%;
+            &:hover {
+                background-color: #0288d1;
+                color: white;
+            }
         }
     }
 }

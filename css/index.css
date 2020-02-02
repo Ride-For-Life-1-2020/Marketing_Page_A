@@ -201,7 +201,7 @@ nav .links-left a {
   display: flex;
   padding: 0 2%;
 }
-nav .links-left :hover {
+nav .links-left a:hover {
   color: #00e676;
 }
 nav .links-right {
@@ -212,14 +212,24 @@ nav .links-right {
   color: white;
   display: flex;
   justify-content: space-evenly;
+  padding: 0 1%;
 }
 nav .links-right a {
   text-decoration: none;
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
-nav .links-right :hover {
+nav .links-right a:hover {
   color: #00e676;
+}
+nav .links-right :last-child {
+  background-color: white;
+  color: black;
+  border-radius: 5%;
+  padding: 0 3%;
+}
+nav .links-right :last-child:hover {
+  background-color: #0288d1;
+  color: white;
 }
