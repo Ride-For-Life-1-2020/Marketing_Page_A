@@ -2,13 +2,15 @@ nav {
     width: 100%;
     padding: 2%;
     .flex-evenly();
-    background-color: black;
+    background-color: #000000;
 
     .title-home {
         width: 20%;
         .flex-center();
-        font-size: 3.2rem;
-        color: white;
+        h2 {
+            font-size: 3.2rem;
+            color: white;
+        }
         a {
             text-decoration: none;
             color: white;
@@ -17,7 +19,7 @@ nav {
     .links-left {
         width: 55%;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         font-size: 1.6rem;
 
         a {
@@ -49,10 +51,12 @@ nav {
             }
         }
         :last-child {
+            font-weight: 600;
             background-color: white;
             color: black;
-            border-radius: 5%;
-            padding: 0 3%;
+            border-radius: 20px;
+            padding: 3%;
+
             &:hover {
                 background-color: #0288d1;
                 color: white;

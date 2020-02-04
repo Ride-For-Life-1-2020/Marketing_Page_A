@@ -142,11 +142,67 @@ table {
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3gnD-w.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -180,12 +236,14 @@ nav {
   padding: 2%;
   display: flex;
   justify-content: space-evenly;
-  background-color: black;
+  background-color: #000000;
 }
 nav .title-home {
   width: 20%;
   display: flex;
   justify-content: center;
+}
+nav .title-home h2 {
   font-size: 3.2rem;
   color: white;
 }
@@ -196,7 +254,7 @@ nav .title-home a {
 nav .links-left {
   width: 55%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-size: 1.6rem;
 }
 nav .links-left a {
@@ -228,10 +286,11 @@ nav .links-right a:hover {
   color: #00e676;
 }
 nav .links-right :last-child {
+  font-weight: 600;
   background-color: white;
   color: black;
-  border-radius: 5%;
-  padding: 0 3%;
+  border-radius: 20px;
+  padding: 3%;
 }
 nav .links-right :last-child:hover {
   background-color: #0288d1;
@@ -267,7 +326,9 @@ body header .first-half-header p {
   font-size: 1.5rem;
 }
 body header .first-half-header a {
+  border-radius: 10px;
   font-size: 1.8rem;
+  font-weight: 500;
   background-color: black;
   color: white;
   text-decoration: none;
@@ -276,6 +337,9 @@ body header .first-half-header a {
 }
 body header .first-half-header a:hover {
   color: #00e676;
+  border: 1px solid #000000;
+  background-color: #f6f7f8;
+  color: #000000;
 }
 body .before-section {
   width: 90%;
@@ -288,6 +352,7 @@ body .first-section {
   display: flex;
   justify-content: center;
   margin: 2% 5% 5% 5%;
+  width: 90%;
 }
 body .first-section .section-row-one {
   margin: 1% 2% 1% 0%;
@@ -386,17 +451,110 @@ body .second-section .section-column-three .section-column-three-words p {
   line-height: 2.4rem;
   margin: 1%;
 }
+body .before-third-section {
+  margin: 5% 5% 2% 9.4%;
+  width: 90%;
+  padding-left: 2.8%;
+}
+body .before-third-section h2 {
+  font-size: 3.2rem;
+}
 body .third-section {
   display: flex;
   justify-content: center;
-  margin: 5%;
+  margin: 0% 5% 5% 5%;
   width: 90%;
-  flex-direction: column;
 }
-body .third-section h2 {
-  font-size: 3.2rem;
+body .third-section .section-bottom-one {
+  margin: 1%;
+  width: 41%;
+}
+body .third-section .section-bottom-one h3 {
+  font-size: 2.6rem;
+}
+body .third-section .section-bottom-one p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+body .third-section .section-bottom-two {
+  margin: 1%;
+  width: 41%;
+}
+body .third-section .section-bottom-two h3 {
+  font-size: 2.6rem;
+}
+body .third-section .section-bottom-two p {
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 body footer {
   display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  padding: 5%;
+}
+body footer h2 {
+  color: #f6f7f8;
+  font-size: 3.2rem;
+  margin: 5%;
+  padding-right: 10%;
+}
+body footer .footer-links-left {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+body footer .footer-links-left a {
+  color: #f6f7f8;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 10% 0 10% 0;
+}
+body footer .footer-links-left a:hover {
+  color: #00e676;
+}
+body footer .footer-links-right {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+body footer .footer-links-right a {
+  color: #f6f7f8;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 10% 0 10% 0;
+}
+body footer .footer-links-right a:hover {
+  color: #00e676;
+}
+body footer .footer-links-right a:last-child {
+  font-weight: 600;
+  background-color: white;
+  color: #000000;
+  width: 120%;
+  height: 20%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  border-radius: 20px;
+}
+body footer .footer-links-right a:last-child:hover {
+  background-color: #0288d1;
+  color: #f6f7f8;
+}
+body .copyright {
+  background-color: #000000;
+  border-top: 2px solid #f6f7f8;
+}
+body .copyright p {
+  text-align: center;
+  padding: 5%;
+  color: #f6f7f8;
+  font-size: 1.3rem;
+}
+body .copyright a {
+  color: #f6f7f8;
+}
+body .copyright a:hover {
+  color: #00e676;
 }
