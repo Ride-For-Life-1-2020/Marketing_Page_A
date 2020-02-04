@@ -1,15 +1,27 @@
-nav {
+.navbar {
     width: 100%;
     padding: 2%;
     .flex-evenly();
-    background-color: #000000;
 
+    background-color: @black;
+    @media @tablet {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
     .title-home {
         width: 20%;
         .flex-center();
+        @media @tablet {
+            width: 100vw;
+            margin: 5%;
+        }
         h2 {
             font-size: 3.2rem;
             color: white;
+            @media @tablet {
+                text-align: center;
+            }
         }
         a {
             text-decoration: none;
@@ -21,12 +33,22 @@ nav {
         display: flex;
         align-items: flex-end;
         font-size: 1.6rem;
-
+        @media @tablet {
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media @mobile {
+            display: none;
+        }
         a {
             text-decoration: none;
             color: white;
-            display: flex;
+
             padding: 0 2%;
+            @media @tablet {
+                padding-bottom: 3%;
+            }
             &:hover {
                 color: #00e676;
             }
@@ -41,11 +63,27 @@ nav {
         .flex-evenly();
         padding: 0 1%;
 
+        @media @tablet {
+            margin: 2%;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media @mobile {
+            width: 100vw;
+            flex-direction: row;
+            justify-content: center;
+        }
         a {
             text-decoration: none;
             color: white;
             display: flex;
             align-items: center;
+            @media @tablet {
+                padding-bottom: 5%;
+            }
+            @media @mobile {
+                padding: 6%;
+            }
             &:hover {
                 color: #00e676;
             }
@@ -60,6 +98,9 @@ nav {
             &:hover {
                 background-color: #0288d1;
                 color: white;
+            }
+            @media @tablet {
+                text-align: center;
             }
         }
     }
