@@ -1,0 +1,181 @@
+body {
+    header {
+        width: 100%;
+        height: 20%;
+        .flex-center();
+        align-items: center;
+        padding: 4%;
+        img {
+            width: 65%;
+            height: 100%;
+            z-index: 0;
+        }
+        .first-half-header {
+            width: 23%;
+            height: 50%;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+            position: absolute;
+            z-index: 1;
+            left: 8%;
+            background-color: white;
+            h3 {
+                margin: 5%;
+                font-size: 4rem;
+            }
+            p {
+                margin: 5%;
+                font-size: 1.5rem;
+            }
+            a {
+                font-size: 1.8rem;
+                background-color: black;
+                color: white;
+                text-decoration: none;
+                padding: 2%;
+                margin: 5%;
+                &:hover {
+                    color: @green;
+                }
+            }
+        }
+        // .second-half-header {
+        //     width: 50%;
+        //     z-index: -1;
+        //     img {
+        //         width: 90%;
+        //         height: 100%;
+        //     }
+        // }
+    }
+    .before-section {
+        width: 90%;
+        margin: 4% 4% 4% 5.1%;
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+    .first-section {
+        .flex-center();
+        margin: 2% 5% 5% 5%;
+        .section-row-one {
+            margin: 1% 2% 1% 0%;
+            h3 {
+                font-size: 2.3rem;
+                margin: 2% 2% 1% 0%;
+            }
+            p {
+                font-size: 1.5rem;
+                margin: 2% 2% 1% 0%;
+            }
+        }
+        .section-row-two {
+            margin: 1% 2% 1% 0%;
+            h3 {
+                font-size: 2.3rem;
+                margin: 2% 2% 1% 0%;
+            }
+            p {
+                font-size: 1.5rem;
+                margin: 2% 2% 1% 0%;
+            }
+        }
+        .section-row-three {
+            margin: 1% 2% 1% 0%;
+            h3 {
+                font-size: 2.3rem;
+                margin: 2% 2% 1% 0%;
+            }
+            p {
+                font-size: 1.5rem;
+                margin: 2% 2% 1% 0%;
+            }
+        }
+    }
+    .second-section {
+        .flex-center();
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%;
+
+        .section-column-one {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 9%;
+            img {
+                width: 40%;
+                height: 20%;
+            }
+            .section-column-one-words {
+                h3 {
+                    font-size: 3.2rem;
+                    margin: 1%;
+                    padding-bottom: 1%;
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    margin: 1%;
+                }
+            }
+        }
+        .section-column-two {
+            display: flex;
+            flex-direction: row;
+            margin: 9%;
+            img {
+                width: 40%;
+                height: 20%;
+            }
+            .section-column-two-words {
+                h3 {
+                    font-size: 3.2rem;
+                    margin: 1%;
+                    padding-bottom: 1%;
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    margin: 1%;
+                }
+            }
+        }
+        .section-column-three {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 9%;
+            img {
+                width: 40%;
+                height: 20%;
+            }
+            .section-column-three-words {
+                h3 {
+                    font-size: 3.2rem;
+                    margin: 1%;
+                    padding-bottom: 1%;
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    margin: 1%;
+                }
+            }
+        }
+    }
+    .third-section {
+        .flex-center();
+        margin: 5%;
+        width: 90%;
+        flex-direction: column;
+        h2 {
+            font-size: 3.2rem;
+        }
+        .section-bottom-one {
+        }
+    }
+    footer {
+        .flex-center();
+    }
+}
