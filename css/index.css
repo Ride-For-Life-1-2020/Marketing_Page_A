@@ -846,3 +846,39 @@ body .copyright a {
 body .copyright a:hover {
   color: #00e676;
 }
+body .frst-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+@media (max-width: 1024px) {
+  body .frst-sec {
+    text-align: center;
+  }
+}
+body .frst-sec h1 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-bottom: 2%;
+}
+body .frst-sec p {
+  font-size: 2rem;
+  padding: 0 10%;
+}
+body .scnd-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+@media (max-width: 1024px) {
+  body .scnd-sec {
+    text-align: center;
+  }
+}
+body .scnd-sec h2 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  margin-bottom: 2%;
+}
